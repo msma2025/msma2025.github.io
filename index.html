@@ -1,10 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>The 1st International Workshop on Multi-Sensorial Media and Applications (MSM)</title>
-  Co-located with ACM Multimedia 2025 (ACM MM 2025)
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>MSM'2025: 1st International Workshop on Multi-Sensorial Media and Applications</title>
+    <meta name="description" content="ACM Multimedia 2025 Workshop on emerging multi-sensorial media technologies including haptics, olfaction, EEG and cross-modal interaction systems">
+    <meta name="keywords" content="ACM Multimedia 2025, Haptic Interaction, Multi-sensory Systems, Cross-modal Analysis, Generative AI for Media">
+    
+    <!-- Academic Style CSS -->
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #3498DB;
+            --light-bg: #F8F9FA;
+        }
+        body {
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .nav-bar {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-bottom: 3px solid var(--accent-color);
+        }
+        .nav-link {
+            margin: 0 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .workshop-details {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .organizer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .important-dates {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        .topics-list {
+            columns: 2;
+            margin: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .topics-list { columns: 1; }
+        }
+    </style>
 </head>
 <body>
-  <h1>test</h1>
+    <header class="header">
+        <h1>MSM'2025</h1>
+        <h2>1st International Workshop on Multi-Sensorial Media and Applications</h2>
+        <p>Co-located with ACM Multimedia 2025 | Shanghai, China</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#topics" class="nav-link">Topics</a>
+        <a href="#organizers" class="nav-link">Organizers</a>
+        <a href="#submission" class="nav-link">Submission</a>
+    </nav>
+
+    <main class="workshop-details">
+        <section id="overview">
+            <h3>Workshop Scope</h3>
+            <p>This pioneering workshop addresses emerging challenges in multi-sensorial media systems encompassing haptic interfaces, olfactory displays, human motion capture, EEG integration, and cross-modal interaction architectures. We welcome submissions across the full spectrum of multi-sensory system development - from psychophysical modeling to network resource optimization.</p>
+        </section>
+
+        <section class="important-dates">
+            <h3>Key Dates</h3>
+            <ul>
+                <li>Submission Deadline: TBD (预计2025年1月)</li>
+                <li>Author Notification: TBD</li>
+                <li>Camera Ready: TBD</li>
+            </ul>
+        </section>
+
+        <section id="topics">
+            <h3>Technical Topics</h3>
+            <ul class="topics-list">
+                <li>Haptic signal processing & coding</li>
+                <li>Olfactory display system design</li>
+                <li>Cross-modal neural integration</li>
+                <li>Generative AI for multi-sensory synthesis</li>
+                <li>QoE evaluation in multi-modal systems</li>
+                <li>Tactile internet architectures</li>
+                <li>Privacy-preserving sensory data processing</li>
+            </ul>
+        </section>
+
+        <section id="organizers">
+            <h3>Workshop Chairs</h3>
+            <div class="organizer-grid">
+                <div class="organizer">
+                    <h4>Prof. Tiesong Zhao</h4>
+                    <p>Fuzhou University<br>
+                    Director, Fujian Key Lab for Media Information Processing<br>
+                    <em>Research: Haptic processing, Multi-modal analysis</em></p>
+                </div>
+                <div class="organizer">
+                    <h4>Prof. Qian Liu</h4>
+                    <p>Dalian University of Technology<br>
+                    Humboldt Fellow | IEEE Haptic Codec Standardization Secretary<br>
+                    <em>Research: Tactile Internet, HCI systems</em></p>
+                </div>
+                <div class="organizer">
+                    <h4>Prof. Zhisheng Yan</h4>
+                    <p>George Mason University<br>
+                    NSF CAREER Awardee | MEDIA Lab Director<br>
+                    <em>Research: Immersive system security</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--primary-color); color: white; text-align: center; padding: 1rem;">
+        <p>Contact: msm2025-chairs@acm.org | 技术支持：福州大学媒体信息处理实验室</p>
+        <img src="./img/acm-logo.png" alt="ACM Logo" style="height: 60px; margin: 1rem;">
+    </footer>
 </body>
 </html>

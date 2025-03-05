@@ -44,27 +44,33 @@
             }
 
             
-            .logo-link {
-            position: absolute;
-            left: 30rem; 
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            position: relative; /
             }
 
-            .logo {
-            height: 50px; 
+        .logo-link {
+            position: absolute;
+            left: calc(25%); 
+            top: 5px
+            }
+
+        .logo {
+            height: 50px;
             width: auto;
             }
 
-            
-            .nav-links {
-            display: flex;
-            gap: 2rem; 
-            }
-
-            .nav-link {
+        .nav-link {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 500;
             font-size: 1rem;
+            }
+
+        .nav-link:hover {
+            color: #e74c3c;
             }
         .workshop-details {
             max-width: 1200px;
@@ -88,8 +94,16 @@
             margin: 2rem 0;
         }
         @media (max-width: 768px) {
-            .topics-list { columns: 1; }
-        }
+            .logo {
+                height: 40px;
+            }
+            .nav-links {
+                gap: 1rem;
+            }
+            .logo-link {
+                right: calc(100% + 0.5rem);
+            }
+            }
     </style>
 </head>
 <body>

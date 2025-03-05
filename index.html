@@ -27,9 +27,15 @@
             text-align: center;
         }
         .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             background: var(--light-bg);
             padding: 1rem;
             border-bottom: 3px solid var(--accent-color);
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .nav-link {
             margin: 0 1.5rem;
@@ -39,7 +45,7 @@
         }
         .workshop-details {
             max-width: 1200px;
-            margin: 2rem auto;
+            margin: 6rem auto 2rem; /* 上边距6rem，下边距2rem */
             padding: 0 1rem;
         }
         .organizer-grid {

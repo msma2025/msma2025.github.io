@@ -35,27 +35,37 @@
             padding: 1rem;
             border-bottom: 3px solid var(--accent-color);
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);    
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+ 
             display: flex;
-            justify-content: center;  
-            align-items: center;      
-            gap: 2rem;               
+            justify-content: center; 
+            align-items: center;
             }
 
-        .logo-link {
-             margin-right: 20px; 
-        }
-
-        .logo {
-             height: 40px;     
-              width: auto;      
-        }
-        .nav-link {
             
+            .logo-link {
+            position: absolute;
+            left: 30rem; 
+            }
+
+            .logo {
+            height: 50px; 
+            width: auto;
+            }
+
+            
+            .nav-links {
+            display: flex;
+            gap: 2rem; 
+            }
+
+            .nav-link {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 500;
-        }
+            font-size: 1rem;
+            }
         .workshop-details {
             max-width: 1200px;
             margin: 6rem auto 2rem; 
@@ -89,17 +99,20 @@
         <p>Co-located with ACM Multimedia 2025 | [City], [Counttry]</p>
     </header>
 
-    <nav class="nav-bar">    
-        <a class="logo-link">
-             <img src="your-logo.png" alt="Logo" class="logo">
+    <nav class="nav-bar">
+        <a href="#" class="logo-link">
+          <img src="figs/logo.png" alt="Logo" class="logo">
         </a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#calll_for_paper" class="nav-link">Call for Papers</a>
-        <a href="#submission" class="nav-link">Submission</a>
-        <a href="#agenda" class="nav-link">Agenda</a>   
-        <a href="#organizers" class="nav-link">Organizers</a>
-
-    </nav>
+      
+        <!-- 导航项容器（保持居中） -->
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#call_for_paper" class="nav-link">Call for Papers</a>
+          <a href="#submission" class="nav-link">Submission</a>
+          <a href="#agenda" class="nav-link">Agenda</a>
+          <a href="#organizers" class="nav-link">Organizers</a>
+        </div>
+      </nav>
 
     <main class="workshop-details">
 
